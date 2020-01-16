@@ -1,0 +1,53 @@
+{% extends 'converter.html' %}
+	{% block main %}
+	
+	<a href='{{url_for('old2new_converter/ru')}}'>ru</a>
+	<a href='{{url_for('old2new_conterter/en')}}'>en</a>
+	<form action='/converter.html' enctype="multipart/form-data" method="post">
+		<div style="width:700px;">
+			<h3>
+				Транслитератор из дореформенной русской орфографии в современную
+			</h3>
+		</div>
+		<div style="border-width: thin; width: 100%; 
+			position: absolute; top: 0px; left: 0px; text-align: right;">
+		      <img src="logo_hse_ru.png" alt="HSE" hspace=20 vspace=20 width='100' height='130'>
+		</div>
+		<div style="border-width: thin; width: 100%; 
+			position: absolute; top: 2px; left: 950px; right: 700px; text-align: justify;">
+		      <img src="logo_ling.jpg" alt="ling" hspace=20 vspace=20 width='150' height='97'>
+		</div>
+		<div style="border-width: thin; width: 350px; 
+			position: absolute; top: 220px; left: 750px; text-align: justify;">
+			<b>Для примера:</b> <br />
+		      Пройдя комнату, такъ называемую, офиціанскую, мы взошли въ кабинетъ Папа. Онъ стоялъ подлѣ письменнаго стола и, показывая на бумаги, запечатанные конверты, кучки денегъ, горячился и что-то толковалъ прикащику Никитѣ Петрову, который на обычно[мъ] своемъ мѣстѣ, подлѣ барометра, разставивъ ноги на приличное раз[стояніе], заложивъ руки назадъ и приводя за спиною пальцы въ движеніе тѣмъ быстрѣе, чѣмъ болѣе горячился [13] папа, спереди не выказывалъ ни малѣйшаго знака безпокойства, но, напротивъ, выраженіемъ лица выказывалъ совершенное сознаніе своей правоты и вмѣстѣ съ тѣмъ подвластности.
+		</div>
+		<div>
+		<textarea name='inp_text' cols=100 rows=15>{{input_text}}</textarea>
+		</div>
+		<input name='go' value='Транслитерировать' type='submit'>
+		<input name='clean' value='Очистить' type='submit'>
+		<input type="checkbox" name="both" value='show'> Показывать оригинальное написание
+		<div>
+			Загрузить файл .txt:
+			<input type="file" name="f_txt">
+			<input type="submit" name='download_txt' value="OK"></p>
+			<input type='hidden' name='filename_txt' value='{{filename}}'>
+			Загрузить файл xml (.html, .xhtml):
+			<input type="file" name="f_xml">
+			<input type="submit" name='download_xml' value="OK"></p>
+			<input type='hidden' name='filename_xml' value='{{filename}}'>
+			
+		</div>
+		<div>
+		<textarea name='outp_text' cols=100 rows=15>{{output_text}}</textarea>
+		</div>
+		
+	</form>
+	
+	<div>
+		<font color='grey'>Елена Сидорова<br />
+		<a href='http://ling.hse.ru'>Школа лингвистики НИУ ВШЭ</a></font>
+	</div>
+	
+	{% endblock %}
