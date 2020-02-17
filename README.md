@@ -109,3 +109,4 @@
 - таблица с номерами томов: https://docs.google.com/spreadsheets/d/1IiwFDuS5CN-La4fLHH_GnkegAll4KHnxhLJ2S8eJ46Y/edit?usp=sharing
 - список тегов: https://docs.google.com/document/d/166ehlLOQG6A5BrfUWcwsMJR7k4vUdmSqboBPJ0PKkm8/edit
 - основные проблемы с распознаванием: https://docs.google.com/document/d/1hxyunYEh6UzidO24GKbXRpQ3BVv1FK3dZhhH-iZOV8w/edit
+- выдержки из ОЗ: https://docs.google.com/document/d/102HcgwrNVy2DrQeDVakcInLCf6LyfKkQ2VggL91pyUw/edit
