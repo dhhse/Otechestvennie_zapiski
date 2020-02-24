@@ -103,7 +103,8 @@
 * Поиск грантов(спонсоров)
 * Поиск волонтеров
 
-13.02.2020 презентация https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0
+# Сделано на 13.02.2020:
+ https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0
 
 # Наши Гугл-доки
 - для опечаток: https://docs.google.com/document/d/1YIW9JnEHyPXfiYjNLVXic4GCZ5krc5Rl-aWsaEcUZj8/edit
