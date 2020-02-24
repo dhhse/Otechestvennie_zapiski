@@ -1,4 +1,6 @@
 # Отечественные записки 2.0
+## Руководитель проекта
+ А. А. Бонч-Осмоловская
 ## Участники
 * Г. Пальчиков
 * Д. Скоринкин
@@ -110,3 +112,5 @@
 - список тегов: https://docs.google.com/document/d/166ehlLOQG6A5BrfUWcwsMJR7k4vUdmSqboBPJ0PKkm8/edit
 - основные проблемы с распознаванием: https://docs.google.com/document/d/1hxyunYEh6UzidO24GKbXRpQ3BVv1FK3dZhhH-iZOV8w/edit
 - выдержки из ОЗ: https://docs.google.com/document/d/102HcgwrNVy2DrQeDVakcInLCf6LyfKkQ2VggL91pyUw/edit
+## Скрипт для автоматической конвертации старой орфографии в современную норму
+https://github.com/dhhse/prereform_to_contemporary
