@@ -107,6 +107,7 @@
  https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0
 
 # Наши Гугл-доки
+- папка для первого тома https://drive.google.com/drive/u/0/folders/12pad-9EZRvJ2TcLsC4Vclv5KL0LNeeJ9
 - для опечаток: https://docs.google.com/document/d/1YIW9JnEHyPXfiYjNLVXic4GCZ5krc5Rl-aWsaEcUZj8/edit
 - для отметки частотных ошибок:https://docs.google.com/document/d/1EtkW6WYSqXvFNOa5Ciu0JSbnO6BjsyyRfBMeBtQD3pY/edit?usp=sharing
 - таблица с номерами томов: https://docs.google.com/spreadsheets/d/1IiwFDuS5CN-La4fLHH_GnkegAll4KHnxhLJ2S8eJ46Y/edit?usp=sharing
