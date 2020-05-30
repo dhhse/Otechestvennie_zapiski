@@ -9,8 +9,6 @@
 * Т. Колпакова
 * М. Федотова
 
-[Презентация технического задания](https://docs.google.com/presentation/d/1o-GR7pnYCiljIjwS4WKwNQwBDLGqG6nIX5H8QdIlSNU/edit?usp=sharing)
-
 ## Общая идея проекта:
 Создание цифрового издания самого знакового для русской культуры журнала.
 
@@ -104,7 +102,7 @@
 * Поиск волонтеров
 
 # Сделано на 13.02.2020:
- https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0
+[Презентация](https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0)
 
 [Гугл-папка с распознанными томами](https://drive.google.com/drive/folders/17svGNpfBqkN_km5VC66Qec-Ck8_FXyrL)
 
@@ -118,5 +116,9 @@
 - [выдержки из ОЗ](https://docs.google.com/document/d/102HcgwrNVy2DrQeDVakcInLCf6LyfKkQ2VggL91pyUw/edit)
 - [положения для подачи заявки](https://docs.google.com/document/d/1wHCsQd2EIRgeCWtShw4gby7YcmRbr5V_HvsnH6PUKW0/edit)
 - [таблица участников проекта "ОЗ 2.0" (Ярмарка проектов)](https://docs.google.com/spreadsheets/d/1_dUaN1Qarl5qp1JPnn4QUNZFOLSFLX83M33zFnspxM0/edit?usp=sharing)
+
+# Презентации
+- [Презентация технического задания](https://docs.google.com/presentation/d/1o-GR7pnYCiljIjwS4WKwNQwBDLGqG6nIX5H8QdIlSNU/edit?usp=sharing)
+- [Презентация 13.02.2020](https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0)
 ## Скрипт для автоматической конвертации старой орфографии в современную норму
 https://github.com/dhhse/prereform_to_contemporary
