@@ -104,7 +104,7 @@
 # Сделано на 13.02.2020:
 [Презентация](https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0)
 
-[Гугл-папка с распознанными томами](https://drive.google.com/drive/folders/17svGNpfBqkN_km5VC66Qec-Ck8_FXyrL)
+# [Гугл-папка с распознанными томами](https://drive.google.com/drive/folders/17svGNpfBqkN_km5VC66Qec-Ck8_FXyrL)
 
 # Наши Гугл-доки
 - [папка для первого тома](https://drive.google.com/drive/u/0/folders/12pad-9EZRvJ2TcLsC4Vclv5KL0LNeeJ9)
@@ -120,5 +120,6 @@
 # Презентации
 - [Презентация технического задания](https://docs.google.com/presentation/d/1o-GR7pnYCiljIjwS4WKwNQwBDLGqG6nIX5H8QdIlSNU/edit?usp=sharing)
 - [Презентация 13.02.2020](https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0)
+- [Презентация со встречи с волонтерами 24.05.2020](https://docs.google.com/presentation/d/1j0B3WhtY4gf73sPdc0QWyXDNBs4fXpokZwCe9gbeteU/edit?usp=sharing)
 ## Скрипт для автоматической конвертации старой орфографии в современную норму
 https://github.com/dhhse/prereform_to_contemporary
