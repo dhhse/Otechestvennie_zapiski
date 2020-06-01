@@ -71,7 +71,6 @@
 - [список тегов](https://docs.google.com/document/d/166ehlLOQG6A5BrfUWcwsMJR7k4vUdmSqboBPJ0PKkm8/edit)
 - [основные проблемы с распознаванием](https://docs.google.com/document/d/1hxyunYEh6UzidO24GKbXRpQ3BVv1FK3dZhhH-iZOV8w/edit)
 - [выдержки из ОЗ](https://docs.google.com/document/d/102HcgwrNVy2DrQeDVakcInLCf6LyfKkQ2VggL91pyUw/edit)
-- [положения для подачи заявки](https://docs.google.com/document/d/1wHCsQd2EIRgeCWtShw4gby7YcmRbr5V_HvsnH6PUKW0/edit)
 - [таблица участников проекта "ОЗ 2.0" (Ярмарка проектов)](https://docs.google.com/spreadsheets/d/1_dUaN1Qarl5qp1JPnn4QUNZFOLSFLX83M33zFnspxM0/edit?usp=sharing)
 
 # Презентации
