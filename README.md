@@ -76,7 +76,6 @@
 
 # Презентации
 - [Презентация технического задания](https://docs.google.com/presentation/d/1o-GR7pnYCiljIjwS4WKwNQwBDLGqG6nIX5H8QdIlSNU/edit?usp=sharing)
-- [Презентация 10.11.2019](https://docs.google.com/presentation/d/1q3-b7vnzEAZ1bSNhrdnJ8XD3EUvo4STn2kWIqbmojsU/edit#slide=id.g6af174697b_1_70)
 - [Презентация 18.12.2019](https://docs.google.com/presentation/d/1BFz_LcvaEb0Y5J5nRxBKhYtjcpe-eMOFk1HvNMSZuWM/edit#slide=id.p12)
 - [Презентация 13.02.2020](https://docs.google.com/presentation/d/1Fu4CikONCPeAPrj7Qvp1b3t9ex8azgPdHeGFD9Szdr8/edit#slide=id.g52bdcee6c3_0_0)
 - [Презентация 15.04.2020](https://docs.google.com/presentation/d/1PlZfi9EpeMsfkAd0sgQM5IHxHYEMHz5OEJcBCIJXg_I/edit#slide=id.p1)
