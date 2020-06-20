@@ -1,44 +1,81 @@
-import docx
-import re
-
 from xml.dom import minidom
-
 import fitz  # работает
 
-root = minidom.Document()   #создаем хмл-файл. Есть еще другие библиотеки, типо ElementryTree
+root = minidom.Document()  # создаем хмл-файл. Есть еще другие библиотеки, типо ElementryTree
 tei = root.createElement("TEI")
 root.appendChild(tei)
 teiheader = root.createElement("teiHeader")
 tei.appendChild(teiheader)
-
 filedesc = root.createElement("fileDesc")
 teiheader.appendChild(filedesc)
-
 titlestmt = root.createElement("titleStmt")
 filedesc.appendChild(titlestmt)
-
 title1 = root.createElement("title")
 titlestmt.appendChild(title1)
-body = root.createElement("body") #первый дочерний тег, боди. Планируется, что остальные теги (название журнала, год издания, авторы и прочее), будут дочерними тегами
+body = root.createElement(
+    "body")  # первый дочерний тег, боди. Планируется, что остальные теги (название журнала, год издания, авторы и прочее), будут дочерними тегами
 title1.appendChild(body)
-
-div = root.createElement("div")
-body.appendChild(div)
-
 doc = fitz.Document("/home/zhenya/PycharmProjects/project1/tdoc.pdf")
 page_count = doc.pageCount
-i = 0
-text = ""
+i = 2
 while i < page_count:
     pge = doc.loadPage(i)
-    page = root.createElement("pb=")
-    div.appendChild(page)
+    page = root.createElement("pb")
+    body.appendChild(page)
     page.appendChild(root.createTextNode(str(i)))
-    p = root.createElement("p")
-    div.appendChild(p)
-    p.appendChild(root.createTextNode(pge.getText("text").replace("\n", " "))) 
+    if i == 2:
+        volume = root.createElement("volume")
+        body.appendChild(volume)
+        volume.appendChild(root.createTextNode(pge.getText("text").replace("\n", " ")))
+    if i == 3:
+        other_information = root.createElement("type")
+        body.appendChild(other_information)
+        other_information.appendChild(
+            root.createTextNode(pge.getText("text").split('\n')[0] + ' ' + pge.getText("text").split('\n')[1]))
+        epigraph = root.createElement("epigraph")
+        other_information.appendChild(epigraph)
+        epigraph.appendChild(root.createTextNode(
+            pge.getText("text").split('\n')[2] + ' ' + pge.getText("text").split('\n')[3] + ' ' +
+            pge.getText("text").split('\n')[4] + ' ' + pge.getText("text").split('\n')[5] + ' ' +
+            pge.getText("text").split('\n')[6] + ' ' + pge.getText("text").split('\n')[7]))
+        publication = root.createElement("publication_city_year")
+        other_information.appendChild(publication)
+        publication.appendChild(
+            root.createTextNode(pge.getText("text").split('\n')[8] + ' ' + pge.getText("text").split('\n')[9]))
+    if i == 4:
+        typographie = root.createElement("typographie")
+        body.appendChild(typographie)
+        typographie.appendChild(root.createTextNode(pge.getText("text").split('\n')[0]))
+        year = root.createElement("year")
+        typographie.appendChild(year)
+        year.appendChild(root.createTextNode(pge.getText("text").split('\n')[1]))
+    if i == 5:
+        censors = root.createElement("censorship_approval")
+        body.appendChild(censors)
+        censors.appendChild(root.createTextNode(pge.getText("text").replace('\n', ' ')))
+    if i == 6:
+        head = root.createElement("head")
+        body.appendChild(head)
+        head.appendChild(root.createTextNode(
+            pge.getText("text").split('\n')[0] + ' ' + pge.getText("text").split('\n')[1] + ' ' +
+            pge.getText("text").split('\n')[2] + ' ' + pge.getText("text").split('\n')[3] + ' '))
+        p = root.createElement("p")
+        body.appendChild(p)
+        p.appendChild(root.createTextNode(pge.getText("text").replace('\n', ' ')))
+    if 7 <= i <= 1058: # учет содержания
+        head = root.createElement("head")
+        body.appendChild(head)
+        head.appendChild(root.createTextNode(
+            pge.getText("text").split('\n')[0] + ' ' + pge.getText("text").split('\n')[1]))
+        p = root.createElement("p")
+        body.appendChild(p)
+        p.appendChild(root.createTextNode(pge.getText("text").replace('\n', ' ')))
+    if i > 1058:
+        p = root.createElement("p")
+        body.appendChild(p)
+        p.appendChild(root.createTextNode(pge.getText("text").replace('\n', ' ')))
     i += 1
 xml_str = root.toprettyxml('\t')
-save_path = ("test.xml")
+save_path = ("corrected.xml")
 with open(save_path, "w", encoding="utf-8") as f:
     f.write(xml_str)
