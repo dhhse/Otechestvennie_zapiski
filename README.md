@@ -85,6 +85,8 @@
 - [Результаты 1.06.2020](https://docs.google.com/presentation/d/1NY2FKKoscIBq1QfVpZS-naGXV9MSf8EElLYuSl42NG4/edit#slide=id.g87c6641fa5_2_45)
 ## Скрипт для автоматической конвертации старой орфографии в современную норму
 https://github.com/dhhse/prereform_to_contemporary
+## Спеллчекер
+https://github.com/kak-to-tak/Google_rusngram_spellcheck
 
 # Макет сайта
 http://www.im-creator.com/free/ml&texts/otechestvennie_i_zapiski
