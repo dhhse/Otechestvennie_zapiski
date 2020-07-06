@@ -64,6 +64,7 @@
 
 
 # [Гугл-папка с распознанными томами](https://drive.google.com/drive/folders/17svGNpfBqkN_km5VC66Qec-Ck8_FXyrL)
+### [Гугл-папка с частично вычитанными томами](https://drive.google.com/drive/folders/1Vwn5d51uJRjUfei_FnM1cMVGg8qYryu4?usp=sharing)
 
 # Наши Гугл-доки
 - [папка для первого тома](https://drive.google.com/drive/u/0/folders/12pad-9EZRvJ2TcLsC4Vclv5KL0LNeeJ9)
