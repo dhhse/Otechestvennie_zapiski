@@ -118,6 +118,14 @@ while i < page_count:
         body.appendChild(head)
         head.appendChild(root.createTextNode(
             pge.getText("text").split('\n')[0] + ' ' + pge.getText("text").split('\n')[1]))
+        # update version to get titles and journal pages
+        head = root.createElement("head")
+        body.appendChild(head)
+        head_text = pge.getText("text").splitlines()
+        head_t = list(filter(lambda x: x != ' ', head_text)) 
+        head.appendChild(
+        root.createTextNode(head_t[0]))
+        #####
         p = root.createElement("p")
         body.appendChild(p)
         p.appendChild(root.createTextNode(pge.getText("text").replace('\n', ' ').replace('-  ', '')))
