@@ -85,7 +85,7 @@
 - [Презентация со встречи с волонтерами 24.05.2020](https://docs.google.com/presentation/d/1j0B3WhtY4gf73sPdc0QWyXDNBs4fXpokZwCe9gbeteU/edit?usp=sharing)
 - [Результаты 1.06.2020](https://docs.google.com/presentation/d/1NY2FKKoscIBq1QfVpZS-naGXV9MSf8EElLYuSl42NG4/edit#slide=id.g87c6641fa5_2_45)
 ## Скрипт для автоматической конвертации старой орфографии в современную норму
-https://github.com/dhhse/prereform_to_contemporary
+https://github.com/dhhse/prereform2modern
 ## Спеллчекер
 https://github.com/kak-to-tak/Google_rusngram_spellcheck
 
