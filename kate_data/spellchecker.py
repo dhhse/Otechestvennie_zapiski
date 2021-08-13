@@ -1,12 +1,3 @@
-import nltk
-from nltk import punkt # для сегментации предложений
-from nltk.tokenize import sent_tokenize
-import re #для замены ненужных символов
-from collections import Counter
-import re
-from string import punctuation
-from sklearn.metrics import f1_score, confusion_matrix
-import sys
 sys.path[0:0] = ['../model']
 import pybktree
 from Levenshtein import editops, distance
@@ -360,7 +351,8 @@ Response: астрономія"""
         except ValueError:
             return error
             print(editops(candidate,error))
-    
+
+
     def to_check(self, string, seqprob, upper_boundary=0, lower_boundary=0):
         '''Rid of non-cyrilic words, 
         words with len < 5, 
@@ -397,7 +389,8 @@ Response: астрономія"""
                             return string
                 else:
                     return self.return_upper(self.get_best(string),string)
-                
+
+
     def return_upper(self,w,e):
         if e.isupper():
             return w.upper()
@@ -406,7 +399,8 @@ Response: астрономія"""
                 return w[0].upper()+w[1:]
             else:
                 return w
-            
+
+
     def rules(self, w, e):
         if len(e)>4:
             rule1 = e[-1] in 'шщцЦШЩ'
@@ -416,20 +410,10 @@ Response: астрономія"""
             if rule1 or rule2 or rule3 or rule4:
               return True
         return False
-    
-def load_model():    
-    data = read_corpus('vocabulary.txt')
-    V = Vocabulary(data)
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model = CharLM(V.vocab_size, word_len=V.pad_len, emb_dim=128, hidden_size=64)
-    model_filename = "old_rus_lm.pth"
-    model.load_state_dict(torch.load(model_filename, map_location={'cuda:0': 'cpu'}))
-    correct = spellCorrect(V=V, model=model)
-    return model
 
-def check(text):
+
+def check(text, corrected):
     text = wpt.tokenize(text)
-    corrected = {}
     corrected_text = []
     for word in text:
         if word in corrected:
@@ -440,13 +424,8 @@ def check(text):
             new_word = correct.to_check(word, seqprob=False)
             corrected_text.append(' ' + new_word)
             corrected[word] = new_word
-    return ''.join(corrected_text)
-    
-def check_p(d):
-    p = d['p'].split('\n')
-    p = '\n'.join(check(text) for text in p)
-    d['p'] = p
-    return d
+    return ''.join(corrected_text), corrected
+
+
     
     
-model = load_model()
