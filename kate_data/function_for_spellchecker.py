@@ -13,10 +13,9 @@ def load_model():
     return correct
 
 
-def check_p(d, corrected):
+def check_p(d):
     p = d['p'].split('\n')
-    p, corrected = '\n'.join(check(text, corrected) for text in p)
+    p = '\n'.join(check(text) for text in p)
     d['p'] = p
-    return d, corrected
+    return d
 
-corrected = []
