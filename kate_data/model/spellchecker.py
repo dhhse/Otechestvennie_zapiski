@@ -412,9 +412,10 @@ Response: астрономія"""
         return False
 
 
-def check(text, corrected):
+def check(text):
     text = wpt.tokenize(text)
     corrected_text = []
+    corrected = {}
     for word in text:
         if word in corrected:
             corrected_text.append(' ' + corrected[word])
@@ -424,7 +425,7 @@ def check(text, corrected):
             new_word = correct.to_check(word, seqprob=False)
             corrected_text.append(' ' + new_word)
             corrected[word] = new_word
-    return ''.join(corrected_text), corrected
+    return ''.join(corrected_text)
 
 
     
